@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bill Split App</title>
+  </head>
+  <body>
+    <p class="heading">
+      <span class="heading-span">Bill</span>
+      <span class="heading-span">Split</span>
+    </p>
+    <div class="app-container">
+      <div class="left-section">
+        <div class="amount-display">
+          <label class="bill form-label">Bill</label>
+          <div class="input bill-input">
+            <span>₹</span>
+            <input id="bill-input" type="number" />
+          </div>
+        </div>
+        <div class="tip-display">
+          <label class="tip form-label">Split Tip %</label>
+          <div class="button-group">
+            <button class="tip-button">5%</button
+            ><button class="tip-button">10%</button
+            ><button class="tip-button">15%</button
+            ><button class="tip-button">25%</button
+            ><button class="tip-button">50%</button
+            ><button class="tip-button">75%</button>
+          </div>
+        </div>
+        <div class="customer-display">
+          <label class="people form-label">Number of People</label>
+          <div class="people-display input">
+            <img src="./people.svg" alt="" class="people-img" />
+            <div class="counter-display">
+              <button class="btn inc">+</button
+              ><span class="people-count">0</span
+              ><button class="btn dec">-</button>
+            </div>
+          </div>
+        </div>
+        <button class="bill-button">Generate Bill</button>
+      </div>
+      <div class="right-section">
+        <div class="right-section-container">
+          <div class="tip-amount amount-container">
+            <div class="tip-label right-label">
+              <h2>Tip Amount</h2>
+              <span class="sub-text">/ person</span>
+            </div>
+            <div class="value-display">
+              <span class="currency">₹</span>
+              <p class="amount-label" id="tipAmount">0.00</p>
+            </div>
+          </div>
+          <div class="total-amount amount-container">
+            <div class="total-label right-label">
+              <h2>Total</h2>
+              <span class="sub-text">/ person</span>
+            </div>
+            <div class="value-display">
+              <span class="currency">₹</span>
+              <p class="amount-label" id="totalAmount">0.00</p>
+            </div>
+          </div>
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
